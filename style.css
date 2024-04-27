@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 html,
 body {
-  height: 100%;
+  
   width: 100%;
-  margin: 0;
+  margin: 10px;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
+  background: linear-gradient(to right bottom, white, white);
 }
 a {
   display: inline-block;
@@ -33,4 +34,97 @@ a:hover {
 a:active {
   transform: scale(0.98);
 }
+.bg-container{
+  
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding: 10px;
+        margin: 10px;
+        width:100%;
 
+}
+.display{
+    display:block;
+}
+
+.sub-container1{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  
+}
+.sub-container2{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  width:100%;
+  
+}
+img{
+  margin:10px;
+  
+}
+
+hr{
+  width:100%;
+  border: 1px solid rgb(189, 180, 180);
+}
+.size-con{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:flex-start;
+
+}
+.message-con{
+    display:none;
+}
+@media (max-width:767px){
+    .bg-container{
+  
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 10px;
+        margin: 10px;
+        width:100%;
+
+}
+.cart-con{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+}
+@media (min-width:768px) and (max-width:1024px){
+    .bg-container{
+  
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 10px;
+        margin: 10px;
+        width:100%;
+
+}
+
+}
+@media (min-width:1025px){
+    .bg-container{
+  
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding: 10px;
+        margin: 10px;
+        width:100%;
+
+}
+
+}
